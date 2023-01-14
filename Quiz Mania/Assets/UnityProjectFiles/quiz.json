@@ -1,0 +1,46 @@
+{
+    "testquiz": [
+        {
+            "question": "HOW MANY PAPER DO YOU NEED TO CRAFT A BOOK?",
+            "options": [
+                "7",
+                "4"
+            ],
+            "rightans": "3"
+        },
+        {
+            "question": "HOW MANY ORES ARE THERE?",
+            "options": [
+                "4",
+                "6"
+            ],
+            "rightans": "7"
+        },
+        {
+            "question": "WATCH THE VIDEO AND ANSWER THE QUESTION. What is Notch’s real name?",
+            "options": [
+                "Steve Jobs",
+                "Mojang Mineo"
+            ],
+            "rightans": "Markus Persson"
+        },
+        {
+            "question": "WHICH GAME MODE HAS PLAYERS COLLECT RESOURCES, BUILD STRUCTURES, BATTLE MOBS, EAT, AND EXPLORE THE WORLD?",
+            "options": [
+                "Creative",
+                "Spectator"
+            ],
+            "rightans": "Survival"
+        },
+        {
+            "question": "WHICH GAME MODE ALLOWS PLAYERS TO CREATE WITH UNLIMITED RESOURCES?",
+            "options": [
+                "Survival",
+                "Hardcore"
+            ],
+            "rightans": "Creative"
+        }
+
+    ]
+
+}
