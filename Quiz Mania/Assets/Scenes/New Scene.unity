@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 91970865}
   - component: {fileID: 91970864}
   - component: {fileID: 91970863}
+  - component: {fileID: 91970867}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -506,6 +507,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &91970867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91970862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ea1a5526fed864a8f40db6cc266de4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionInputField: {fileID: 646895705}
 --- !u!1 &181461775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1594,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1554953258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 91970867}
+        m_TargetAssemblyTypeName: JsonSaveSystem, Assembly-CSharp
+        m_MethodName: SaveToJson
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1554953258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1630,7 +1656,7 @@ GameObject:
   - component: {fileID: 1824995848}
   - component: {fileID: 1824995847}
   - component: {fileID: 1824995846}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1696,7 +1722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824995845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -179, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1786,7 +1812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1869675481}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 91970867}
+        m_TargetAssemblyTypeName: JsonSaveSystem, Assembly-CSharp
+        m_MethodName: LoadFromJson
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1869675481
 MonoBehaviour:
   m_ObjectHideFlags: 0
