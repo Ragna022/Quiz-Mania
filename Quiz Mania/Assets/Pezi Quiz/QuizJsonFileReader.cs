@@ -3,7 +3,6 @@ using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,7 +13,7 @@ public class QuizJsonFileReader : MonoBehaviour
     public QuizJsonStructure.QuestionsList questList =
      new QuizJsonStructure.QuestionsList();
 
-    [HideInInspector] public TextMeshProUGUI PrefabText;
+    [HideInInspector] public Text PrefabText;
     
     public void ParseQuizJson(string json)
     {   
@@ -38,19 +37,19 @@ public class QuizJsonFileReader : MonoBehaviour
         
         if(i+1 == j){ 
 
-            obj.GetComponentInChildren<TextMeshProUGUI>().color = quizManagerPixelmonModsAddonsRef.FigmaDesignYellow;
+            obj.GetComponentInChildren<Text>().color = quizManagerPixelmonModsAddonsRef.FigmaDesignYellow;
             obj.GetComponent<CanvasGroup>().alpha = 1f;
             return;
         }
 
         else{
             if(j < i+1){
-                obj.GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
+                obj.GetComponentInChildren<Text>().color = Color.white;
                 obj.GetComponent<CanvasGroup>().alpha = 0.3f;   
             }
             
             else{
-                obj.GetComponentInChildren<TextMeshProUGUI>().color = quizManagerPixelmonModsAddonsRef.FigmaDesignYellow;
+                obj.GetComponentInChildren<Text>().color = quizManagerPixelmonModsAddonsRef.FigmaDesignYellow;
                 obj.GetComponent<CanvasGroup>().alpha = 1f;
             }
         }

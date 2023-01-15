@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class QuizManager : MonoBehaviour
 {   
     public static QuizManager quizManagerPixelmonModsAddonsRef;
     public QuizJsonFileReader quizJsonFileReaderPixelmonMods;
-    public TextMeshProUGUI _questions;
-    public TextMeshProUGUI[] _buttonTexts;
+    public Text _questions;
+    public Text[] _optionsTexts;
     public int TotalQuestions;
     public int CurrentQuestionNumber;
 
@@ -36,12 +35,12 @@ public class QuizManager : MonoBehaviour
         
         for (int j = 0; j < quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options.Length; j++){
 
-            _buttonTexts[j].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options[j];
+            _optionsTexts[j].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options[j];
         }
 
         int rightAnswerindex = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options.Length;
 
-        _buttonTexts[rightAnswerindex].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].rightAnswer;
+        _optionsTexts[rightAnswerindex].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].rightAnswer;
 
     }
 

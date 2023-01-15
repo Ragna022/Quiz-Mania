@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1702,11 +1702,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quizJsonFileReaderPixelmonMods: {fileID: 1167523283}
-  _questions: {fileID: 220234654}
+  _questions: {fileID: 0}
   _buttonTexts:
-  - {fileID: 2017176770}
-  - {fileID: 1230758721}
-  - {fileID: 906629792}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   TotalQuestions: 0
   CurrentQuestionNumber: 0
   FigmaDesignYellow: {r: 1, g: 0.8887102, b: 0.11698109, a: 1}
