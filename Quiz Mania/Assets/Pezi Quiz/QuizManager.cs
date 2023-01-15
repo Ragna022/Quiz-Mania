@@ -9,7 +9,7 @@ public class QuizManager : MonoBehaviour
     public static QuizManager quizManagerPixelmonModsAddonsRef;
     public QuizJsonFileReader quizJsonFileReaderPixelmonMods;
     public Text _questions;
-    public Text[] _optionsTexts;
+    public Text[] _options;
     public int TotalQuestions;
     public int CurrentQuestionNumber;
 
@@ -35,12 +35,12 @@ public class QuizManager : MonoBehaviour
         
         for (int j = 0; j < quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options.Length; j++){
 
-            _optionsTexts[j].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options[j];
+            _options[j].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options[j];
         }
 
         int rightAnswerindex = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].options.Length;
 
-        _optionsTexts[rightAnswerindex].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].rightAnswer;
+        _options[rightAnswerindex].text = quizJsonFileReaderPixelmonMods.questList.questionsData[x-1].rightAnswer;
 
     }
 
